@@ -10,7 +10,6 @@ app.use(cors( {
   origin: process.env.ORIGIN || "http://localhost:5173" ,
 }));
 app.use(express.json());
-console.log("OpenAI API Key:", process.env.OPENAI_API_KEY);
 
 app.use("/uploads", express.static("uploads"));
 
